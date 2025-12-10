@@ -14,7 +14,7 @@ from telemetry_generator.config import (
 @pytest.fixture
 def test_config():
     return AppConfig(
-        server=ServerConfig(host="127.0.0.1", port=0),
+        generator_server=ServerConfig(host="127.0.0.1", port=0),
         telemetry=TelemetryConfig(
             switches=5,
             update_interval_seconds=1,

@@ -1,4 +1,5 @@
 # telemetry_generator/server.py
+import asyncio
 from aiohttp import web
 from telemetry_generator.handlers.counters import CountersHandler
 from shared.base import BaseRedisStore
@@ -31,9 +32,12 @@ def create_app(config: AppConfig) -> web.Application:
         app["telemetry_task"] = app.loop.create_task(telemetry_gen.run())
 
     async def cleanup_background_tasks(app: web.Application):
-        app["telemetry_task"].cancel()
-        await app["telemetry_task"]
-
+        task = app["telemetry_task"]
+        task.cancel()
+        try:
+            await task
+        except asyncio.CancelledError:
+            pass
     app.on_startup.append(start_background_tasks)
     app.on_cleanup.append(cleanup_background_tasks)
 
