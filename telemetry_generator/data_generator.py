@@ -4,7 +4,7 @@ from shared.base_redis import BaseRedisStore
 from telemetry_generator.config import TelemetryConfig
 
 
-class TelemetryGenerator:
+class DataGenerator:
     def __init__(self, config: TelemetryConfig, redis_store: BaseRedisStore):
         self.config = config
         self.redis = redis_store

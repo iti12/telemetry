@@ -3,7 +3,7 @@ import asyncio
 from aiohttp import web
 from telemetry_generator.handlers.counters import CountersHandler
 from shared.base_redis import BaseRedisStore
-from telemetry_generator.telemetry_generator import TelemetryGenerator  # your class
+from telemetry_generator.data_generator import DataGenerator  # your class
 from telemetry_generator.config import AppConfig
 
 def create_app(config: AppConfig) -> web.Application:
@@ -22,7 +22,7 @@ def create_app(config: AppConfig) -> web.Application:
     app.router.add_get("/counters", counters_handler)
 
     # Create telemetry generator instance
-    telemetry_gen = TelemetryGenerator(
+    telemetry_gen = DataGenerator(
         config=config.telemetry,
         redis_store=redis_store,
     )

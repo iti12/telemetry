@@ -91,17 +91,16 @@ python telemetry_generator/main.py
 
 ⸻
 
-API Endpoints (for Telemetry Web Server)
-	1.	GetMetric: Fetch a specific metric for a specific switch
-
-GET /metrics/{switch_id}/{metric_name}
-
-	2.	ListMetrics: Fetch all metrics for all switches
+### API Endpoints (for Telemetry Generator)
 
 GET /counters
 
-	•	Returns CSV format: switch,metric1,metric2,...
+Returns CSV format: switch,metric1,metric2,...
 
+e.g:
+```bash
+curl -X GET http://127.0.0.1:9001/counters
+```
 ⸻
 
 ## Testing
