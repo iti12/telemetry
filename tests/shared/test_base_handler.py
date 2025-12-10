@@ -2,7 +2,7 @@ import asyncio
 import pytest
 from aiohttp import web
 
-from telemetry_generator.handlers.base import BaseHandler
+from shared.base_handler import BaseHandler
 
 
 class DummyHandler(BaseHandler):

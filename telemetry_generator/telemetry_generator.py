@@ -1,6 +1,6 @@
 import asyncio
 import random
-from shared.base import BaseRedisStore
+from shared.base_redis import BaseRedisStore
 from telemetry_generator.config import TelemetryConfig
 
 

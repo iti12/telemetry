@@ -2,8 +2,8 @@ import csv
 import io
 import logging
 from aiohttp import web
-from telemetry_generator.handlers.base import BaseHandler
-from shared.base import BaseRedisStore
+from shared.base_handler import BaseHandler
+from shared.base_redis import BaseRedisStore
 
 logger = logging.getLogger(__name__)
 

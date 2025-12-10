@@ -2,7 +2,7 @@
 import asyncio
 from aiohttp import web
 from telemetry_generator.handlers.counters import CountersHandler
-from shared.base import BaseRedisStore
+from shared.base_redis import BaseRedisStore
 from telemetry_generator.telemetry_generator import TelemetryGenerator  # your class
 from telemetry_generator.config import AppConfig
 
