@@ -46,7 +46,7 @@ telemetry/
 1. Clone the repository:
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/iti12/telemetry
 cd telemetry
 ```
 
@@ -105,6 +105,13 @@ GET /counters
 ⸻
 
 ## Testing
+
+
+* use dev install
+
+```bash
+pip install -e ".[dev]"
+```
 
 Run unit tests with:
 
