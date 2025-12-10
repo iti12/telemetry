@@ -1,0 +1,16 @@
+generator_server:
+  host: "127.0.0.1"
+  port: 9001
+
+telemetry:
+  switches: 20
+  update_interval_seconds: 10
+
+logging:
+  level: INFO
+  file: "telemetry_generator.log"
+
+redis:
+  host: "127.0.0.1"
+  port: 6379
+  db: 0

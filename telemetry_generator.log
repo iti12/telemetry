@@ -1,0 +1,119 @@
+2025-12-08 15:10:35,673 INFO 127.0.0.1 [08/Dec/2025:15:10:35 +0200] "GET / HTTP/1.1" 404 173 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-08 15:10:35,776 INFO 127.0.0.1 [08/Dec/2025:15:10:35 +0200] "GET /favicon.ico HTTP/1.1" 404 173 "http://localhost:9001/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-08 15:10:45,552 INFO 127.0.0.1 [08/Dec/2025:15:10:45 +0200] "GET / HTTP/1.1" 404 173 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-08 15:10:45,659 INFO 127.0.0.1 [08/Dec/2025:15:10:45 +0200] "GET /favicon.ico HTTP/1.1" 404 173 "http://127.0.0.1:9001/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-08 15:11:06,634 INFO 127.0.0.1 [08/Dec/2025:15:11:06 +0200] "GET /counters HTTP/1.1" 200 2061 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-10 15:36:44,890 INFO 127.0.0.1 [10/Dec/2025:15:36:44 +0200] "GET / HTTP/1.1" 404 173 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-10 15:36:44,999 INFO 127.0.0.1 [10/Dec/2025:15:36:44 +0200] "GET /favicon.ico HTTP/1.1" 404 173 "http://localhost:9001/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-10 15:37:22,653 INFO 127.0.0.1 [10/Dec/2025:15:37:22 +0200] "GET /counters HTTP/1.1" 200 149 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-10 15:39:50,277 INFO 127.0.0.1 [10/Dec/2025:15:39:50 +0200] "GET /counters HTTP/1.1" 200 149 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-10 15:44:41,696 INFO 127.0.0.1 [10/Dec/2025:15:44:41 +0200] "GET /counters HTTP/1.1" 200 149 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+2025-12-10 15:45:40,192 INFO 127.0.0.1 [10/Dec/2025:15:45:40 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 15:45:47,286 INFO 127.0.0.1 [10/Dec/2025:15:45:47 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 15:45:54,166 INFO 127.0.0.1 [10/Dec/2025:15:45:54 +0200] "UNKNOWN / HTTP/1.0" 400 222 "-" "-"
+2025-12-10 15:46:00,900 INFO 127.0.0.1 [10/Dec/2025:15:46:00 +0200] "UNKNOWN / HTTP/1.0" 400 222 "-" "-"
+2025-12-10 15:46:13,839 INFO 127.0.0.1 [10/Dec/2025:15:46:13 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:20:58,945 INFO 127.0.0.1 [10/Dec/2025:16:20:58 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:21:02,740 INFO 127.0.0.1 [10/Dec/2025:16:21:02 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:21:42,099 INFO 127.0.0.1 [10/Dec/2025:16:21:42 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:24:05,262 INFO 127.0.0.1 [10/Dec/2025:16:24:05 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:26:36,225 INFO 127.0.0.1 [10/Dec/2025:16:26:36 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:26:40,246 INFO 127.0.0.1 [10/Dec/2025:16:26:40 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:26:58,058 ERROR Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/Users/itamaravraham/dev/telemetry/venv/lib/python3.9/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+  File "/Users/itamaravraham/dev/telemetry/venv/lib/python3.9/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+  File "/Users/itamaravraham/dev/telemetry/venv/lib/python3.9/site-packages/telemetry_generator/handlers/counters.py", line 15, in handle
+    self.logger
+AttributeError: 'CountersHandler' object has no attribute 'logger'
+2025-12-10 16:26:58,060 INFO 127.0.0.1 [10/Dec/2025:16:26:58 +0200] "GET /counters HTTP/1.1" 500 245 "-" "curl/8.7.1"
+2025-12-10 16:27:21,476 INFO 127.0.0.1 [10/Dec/2025:16:27:21 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:27:24,441 INFO 127.0.0.1 [10/Dec/2025:16:27:24 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:29:14,217 INFO 127.0.0.1 [10/Dec/2025:16:29:14 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:29:16,771 INFO 127.0.0.1 [10/Dec/2025:16:29:16 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:30:59,604 INFO 127.0.0.1 [10/Dec/2025:16:30:59 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:31:04,065 INFO 127.0.0.1 [10/Dec/2025:16:31:04 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:31:13,807 INFO 127.0.0.1 [10/Dec/2025:16:31:13 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:31:58,327 INFO metrics: avg latency: 0.0
+2025-12-10 16:31:58,327 INFO 127.0.0.1 [10/Dec/2025:16:31:58 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:36:31,538 INFO metrics: avg latency: 0.0
+2025-12-10 16:36:31,539 INFO 127.0.0.1 [10/Dec/2025:16:36:31 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:36:34,694 INFO metrics: avg latency: 0.0
+2025-12-10 16:36:34,694 INFO 127.0.0.1 [10/Dec/2025:16:36:34 +0200] "GET /counters HTTP/1.1" 200 149 "-" "curl/8.7.1"
+2025-12-10 16:43:59,880 INFO metrics: avg latency: 0.0
+2025-12-10 16:43:59,881 INFO 127.0.0.1 [10/Dec/2025:16:43:59 +0200] "GET /counters HTTP/1.1" 200 221 "-" "curl/8.7.1"
+2025-12-10 16:44:08,851 INFO metrics: avg latency: 0.0
+2025-12-10 16:44:08,851 INFO 127.0.0.1 [10/Dec/2025:16:44:08 +0200] "GET /counters HTTP/1.1" 200 221 "-" "curl/8.7.1"
+2025-12-10 16:44:15,435 INFO metrics: avg latency: 0.0
+2025-12-10 16:44:15,435 INFO 127.0.0.1 [10/Dec/2025:16:44:15 +0200] "GET /counters HTTP/1.1" 200 221 "-" "curl/8.7.1"
+2025-12-10 16:44:46,159 INFO metrics: avg latency: 0.0
+2025-12-10 16:44:46,159 INFO 127.0.0.1 [10/Dec/2025:16:44:46 +0200] "GET /counters HTTP/1.1" 200 221 "-" "curl/8.7.1"
+2025-12-10 16:44:49,586 INFO metrics: avg latency: 0.0
+2025-12-10 16:44:49,586 INFO 127.0.0.1 [10/Dec/2025:16:44:49 +0200] "GET /counters HTTP/1.1" 200 221 "-" "curl/8.7.1"
+2025-12-10 16:49:12,299 INFO metrics: avg latency: 0.0
+2025-12-10 16:49:12,300 INFO avg_latency:0.006537916999999949
+2025-12-10 16:49:12,300 INFO 127.0.0.1 [10/Dec/2025:16:49:12 +0200] "GET /counters HTTP/1.1" 200 222 "-" "curl/8.7.1"
+2025-12-10 16:50:05,694 INFO counters metrics: avg_latency:0.0018717080000001385
+2025-12-10 16:50:05,695 INFO 127.0.0.1 [10/Dec/2025:16:50:05 +0200] "GET /counters HTTP/1.1" 200 221 "-" "curl/8.7.1"
+2025-12-10 16:51:36,058 INFO counters metrics: avg_latency=0.000s, requests=1
+2025-12-10 16:51:36,059 INFO 127.0.0.1 [10/Dec/2025:16:51:36 +0200] "GET /counters HTTP/1.1" 200 220 "-" "curl/8.7.1"
+2025-12-10 16:51:39,831 INFO counters metrics: avg_latency=0.001s, requests=2
+2025-12-10 16:51:39,832 INFO 127.0.0.1 [10/Dec/2025:16:51:39 +0200] "GET /counters HTTP/1.1" 200 220 "-" "curl/8.7.1"
+2025-12-10 16:51:46,538 INFO counters metrics: avg_latency=0.001s, requests=3
+2025-12-10 16:51:46,539 INFO 127.0.0.1 [10/Dec/2025:16:51:46 +0200] "GET /counters HTTP/1.1" 200 220 "-" "curl/8.7.1"
+2025-12-10 16:55:37,296 INFO counters metrics: avg_latency=0.004s, requests=1
+2025-12-10 16:55:37,296 INFO 127.0.0.1 [10/Dec/2025:16:55:37 +0200] "GET /counters HTTP/1.1" 200 665 "-" "curl/8.7.1"
+2025-12-10 16:55:47,580 INFO counters metrics: avg_latency=0.003s, requests=2
+2025-12-10 16:55:47,580 INFO 127.0.0.1 [10/Dec/2025:16:55:47 +0200] "GET /counters HTTP/1.1" 200 670 "-" "curl/8.7.1"
+2025-12-10 16:56:03,176 INFO counters metrics: avg_latency=0.005s, requests=3
+2025-12-10 16:56:03,176 INFO 127.0.0.1 [10/Dec/2025:16:56:03 +0200] "GET /counters HTTP/1.1" 200 669 "-" "curl/8.7.1"
+2025-12-10 16:56:05,534 INFO counters metrics: avg_latency=0.005s, requests=4
+2025-12-10 16:56:05,535 INFO 127.0.0.1 [10/Dec/2025:16:56:05 +0200] "GET /counters HTTP/1.1" 200 669 "-" "curl/8.7.1"
+2025-12-10 16:56:06,290 INFO counters metrics: avg_latency=0.005s, requests=5
+2025-12-10 16:56:06,290 INFO 127.0.0.1 [10/Dec/2025:16:56:06 +0200] "GET /counters HTTP/1.1" 200 669 "-" "curl/8.7.1"
+2025-12-10 16:56:06,656 INFO counters metrics: avg_latency=0.006s, requests=6
+2025-12-10 16:56:06,656 INFO 127.0.0.1 [10/Dec/2025:16:56:06 +0200] "GET /counters HTTP/1.1" 200 669 "-" "curl/8.7.1"
+2025-12-10 16:56:06,986 INFO counters metrics: avg_latency=0.006s, requests=7
+2025-12-10 16:56:06,986 INFO 127.0.0.1 [10/Dec/2025:16:56:06 +0200] "GET /counters HTTP/1.1" 200 669 "-" "curl/8.7.1"
+2025-12-10 16:56:08,835 INFO counters metrics: avg_latency=0.006s, requests=8
+2025-12-10 16:56:08,835 INFO 127.0.0.1 [10/Dec/2025:16:56:08 +0200] "GET /counters HTTP/1.1" 200 669 "-" "curl/8.7.1"
+2025-12-10 17:21:52,012 INFO counters metrics: avg_latency=0.004s, requests=1
+2025-12-10 17:21:52,012 INFO 127.0.0.1 [10/Dec/2025:17:21:52 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:54,061 INFO counters metrics: avg_latency=0.022s, requests=2
+2025-12-10 17:21:54,062 INFO 127.0.0.1 [10/Dec/2025:17:21:54 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:54,817 INFO counters metrics: avg_latency=0.016s, requests=3
+2025-12-10 17:21:54,818 INFO 127.0.0.1 [10/Dec/2025:17:21:54 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:55,369 INFO counters metrics: avg_latency=0.013s, requests=4
+2025-12-10 17:21:55,369 INFO 127.0.0.1 [10/Dec/2025:17:21:55 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:55,706 INFO counters metrics: avg_latency=0.011s, requests=5
+2025-12-10 17:21:55,706 INFO 127.0.0.1 [10/Dec/2025:17:21:55 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:56,126 INFO counters metrics: avg_latency=0.010s, requests=6
+2025-12-10 17:21:56,126 INFO 127.0.0.1 [10/Dec/2025:17:21:56 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:56,474 INFO counters metrics: avg_latency=0.009s, requests=7
+2025-12-10 17:21:56,474 INFO 127.0.0.1 [10/Dec/2025:17:21:56 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:56,873 INFO counters metrics: avg_latency=0.008s, requests=8
+2025-12-10 17:21:56,874 INFO 127.0.0.1 [10/Dec/2025:17:21:56 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:57,395 INFO counters metrics: avg_latency=0.008s, requests=9
+2025-12-10 17:21:57,395 INFO 127.0.0.1 [10/Dec/2025:17:21:57 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:57,868 INFO counters metrics: avg_latency=0.008s, requests=10
+2025-12-10 17:21:57,868 INFO 127.0.0.1 [10/Dec/2025:17:21:57 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:21:58,373 INFO counters metrics: avg_latency=0.007s, requests=11
+2025-12-10 17:21:58,373 INFO 127.0.0.1 [10/Dec/2025:17:21:58 +0200] "GET /counters HTTP/1.1" 200 666 "-" "curl/8.7.1"
+2025-12-10 17:22:08,027 INFO counters metrics: avg_latency=0.007s, requests=12
+2025-12-10 17:22:08,027 INFO 127.0.0.1 [10/Dec/2025:17:22:08 +0200] "GET /counters HTTP/1.1" 200 669 "-" "curl/8.7.1"
+2025-12-10 17:56:36,911 INFO counters metrics: avg_latency=0.007s, requests=1
+2025-12-10 17:59:00,599 ERROR Error handling request from 127.0.0.1
+Traceback (most recent call last):
+  File "/Users/itamaravraham/dev/telemetry/venv/lib/python3.9/site-packages/aiohttp/web_protocol.py", line 510, in _handle_request
+    resp = await request_handler(request)
+  File "/Users/itamaravraham/dev/telemetry/venv/lib/python3.9/site-packages/aiohttp/web_app.py", line 569, in _handle
+    return await handler(request)
+  File "/Users/itamaravraham/dev/telemetry/venv/lib/python3.9/site-packages/aiohttp/web_urldispatcher.py", line 214, in handler_wrapper
+    result = await result
+  File "/Users/itamaravraham/dev/telemetry/telemetry_generator/handlers/base.py", line 25, in __call__
+    logger.info(f"{self.method} {self.name} metrics: avg_latency={self.avg_latency:.3f}s, requests={self.request_count}")
+AttributeError: 'CountersHandler' object has no attribute 'method'
+2025-12-10 17:59:50,621 INFO <bound method BaseHandler.__call__ of <telemetry_generator.handlers.counters.CountersHandler object at 0x1042533d0>> counters metrics: avg_latency=0.008s, requests=1
+2025-12-10 18:01:15,003 INFO GET counters metrics: avg_latency=0.003s, requests=1
