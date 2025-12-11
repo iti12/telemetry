@@ -2,19 +2,21 @@ import pytest
 import pytest_asyncio
 
 from telemetry_generator.server import create_app
-from telemetry_generator.config import (
+from shared.config import (
     AppConfig,
-    ServerConfig,
+    GeneratorServerConfig,
     TelemetryConfig,
     LoggingConfig,
     RedisConfig,
 )
+from shared.config import MetricServerConfig
 
 
 @pytest.fixture
 def test_config():
     return AppConfig(
-        generator_server=ServerConfig(host="127.0.0.1", port=0),
+        generator_server=GeneratorServerConfig(host="127.0.0.1", port=0),
+        metric_server=MetricServerConfig(host="127.0.0.1", port=0),
         telemetry=TelemetryConfig(
             switches=5,
             update_interval_seconds=1,

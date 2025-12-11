@@ -1,7 +1,7 @@
 import asyncio
 import random
 from shared.base_redis import BaseRedisStore
-from telemetry_generator.config import TelemetryConfig
+from shared.config import TelemetryConfig
 
 
 class DataGenerator:

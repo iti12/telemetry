@@ -8,10 +8,15 @@ class RedisConfig:
     db: int = 0
 
 @dataclass(frozen=True)
-class ServerConfig:
+class GeneratorServerConfig:
     host: str
     port: int
 
+
+@dataclass(frozen=True)
+class MetricServerConfig:
+    host: str
+    port: int
 
 @dataclass(frozen=True)
 class TelemetryConfig:
@@ -27,7 +32,8 @@ class LoggingConfig:
 
 @dataclass(frozen=True)
 class AppConfig:
-    generator_server: ServerConfig
+    generator_server: GeneratorServerConfig
+    metric_server: MetricServerConfig
     telemetry: TelemetryConfig
     logging: LoggingConfig
     redis: RedisConfig
@@ -37,7 +43,8 @@ def load_config(path: str) -> AppConfig:
         raw = yaml.safe_load(f)
 
     return AppConfig(
-        generator_server=ServerConfig(**raw["generator_server"]),
+        generator_server=GeneratorServerConfig(**raw["generator_server"]),
+        metric_server=MetricServerConfig(**raw["metric_server"]),
         telemetry=TelemetryConfig(**raw["telemetry"]),
         logging=LoggingConfig(**raw["logging"]),
         redis=RedisConfig(**raw["redis"]),

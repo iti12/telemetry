@@ -2,6 +2,11 @@ generator_server:
   host: "127.0.0.1"
   port: 9001
 
+metric_server:
+  host: "127.0.0.1"
+  port: 8080
+
+
 telemetry:
   switches: 20
   update_interval_seconds: 10

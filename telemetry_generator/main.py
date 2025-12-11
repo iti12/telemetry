@@ -1,7 +1,7 @@
 import argparse
 import logging
 
-from telemetry_generator.config import load_config
+from shared.config import load_config
 from telemetry_generator.server import create_app
 
 

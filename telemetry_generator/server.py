@@ -4,7 +4,7 @@ from aiohttp import web
 from telemetry_generator.handlers.counters import CountersHandler
 from shared.base_redis import BaseRedisStore
 from telemetry_generator.data_generator import DataGenerator  # your class
-from telemetry_generator.config import AppConfig
+from shared.config import AppConfig
 
 def create_app(config: AppConfig) -> web.Application:
     app = web.Application()

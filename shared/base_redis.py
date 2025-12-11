@@ -37,3 +37,11 @@ class BaseRedisStore:
 
     def close(self):
         self._redis.close()
+
+    async def get_metrics(self, switch_id: str):
+        # wrapper for the sync call
+        return self.get_switch_metrics(switch_id)
+
+    async def set_metrics(self, switch_id: str, metrics: dict):
+        # wrapper for sync call
+        return self.set_switch_metrics(switch_id, metrics)
