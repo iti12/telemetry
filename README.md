@@ -67,7 +67,7 @@ source venv/bin/activate
 ```bash
 pip install .
 ```
-4. Install and Start a Redis server with brew (default host: 127.0.0.1, port: 6379):
+4. Install and Start a Redis server. For windows and ubuntu, check online. On MAC you can use brew (default host: 127.0.0.1, port: 6379):
 ```bash
 brew install redis
 brew services start redis
@@ -166,6 +166,7 @@ pytest -v
 5. Scaling - use kafka producer per N switches, depends on the required sampling speed. Add kafak consumers to upload messages to DB
 6. DB - Use relational (Mysql) DB if we know the expected attributes. else use non relational (Mongo) DB. Use index on switch-id and last_updated.
 7. Add authentication and API rate limiting
+8. improved error handling
 
 
 This README explains the **system architecture, usage, testing, and future improvements**.  
