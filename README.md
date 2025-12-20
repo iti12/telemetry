@@ -4,15 +4,15 @@
 
 This project implements a simulated network telemetry aggregation system inspired by NVIDIA's UFM. It consists of two main components:
 
-1. **Telemetry Generator**: Simulates telemetry data (bandwidth, latency, packet errors) for multiple switches and stores the data in a Redis server.
-2. **Metric Web Server**: Provides a REST API to fetch telemetry data from Redis. Supports endpoints to get individual metrics or all metrics across switches.
+1. **Telemetry Generator**: Simulates telemetry data (bandwidth, latency, packet errors) for multiple switches .
+2. **Metric Web Server**: Provides a REST API to retrieves telemetry data exclusively via the Generator REST API. Supports endpoints to get individual metrics or all metrics across switches.
 
 ---
 
 ## Features
 
 - Simulated telemetry data with configurable update interval.
-- Redis-based shared storage for metrics.
+- Redis-based storage for metrics.
 - Fast API responses with minimal latency.
 - Basic observability: logs request latency and API activity.
 - Configurable server settings (host, port, logging, Redis, etc.).
@@ -35,12 +35,13 @@ telemetry/
 │   ├── server.py
 │   ├── handlers/
 │   │   ├── __init__.py
+│   │   ├── base_metrics_handler.py
 │   │   ├── get_metric.py
 │   │   └── list_metrics.py
-├── shared /            # Shared helper classes
+├── base /            # base helper classes
 │   ├── init.py
 │   └── base_redis.py           # BaseRedisStore class
-│   ├── base.py                 # BaseHandler class for latency tracking
+│   ├── base_handler.py         # BaseHandler class for latency tracking
 ├── config.py                   # AppConfig, ServerConfig, TelemetryConfig, RedisConfig
 ├── setup.py                    # Project dependencies (aiohttp, redis, pytest)
 ├── tests/                      # Unit tests
@@ -98,13 +99,15 @@ python telemetry_generator/main.py
 
 *	This starts generating telemetry data for all configured switches and pushes it to Redis.
 *	Logs request latency and metrics information to the configured log file.
-* enables REST server implementing GET http://127.0.0.1:9001/counters to retrieve all counters
+*   enables REST server implementing GET http://127.0.0.1:9001/counters to retrieve all counters
 
 ⸻
 
 ### API Endpoints (for Telemetry Generator)
 
+```angular2html
 GET /counters
+```
 
 Returns CSV format: switch,metric1,metric2,...
 
@@ -128,12 +131,14 @@ python -m metrics_server.main
 
 ### API Endpoints for the metrics server
 
-```bash
+```angular2html
+GET /telemetry/
 GET /telemetry/{switch_id}/{metric}
 ```
-
+* e.g.:
 ```bash
 curl -X GET http://127.0.0.1:8080/telemetry/
+curl -X GET http://127.0.0.1:8080/telemetry/switch-19/latency_ms
 ```
 
 
@@ -159,7 +164,7 @@ pytest -v
 
 ## Future Improvements
 
-1. Use asyncio Redis client for high-throughput ingestion
+1. Add new GET end point to telemetry generator to query only one metric/switch
 2. Add swagger for API's
 3. Add docstrings, typestring 
 4. Full coverage on unit tests

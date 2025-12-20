@@ -31,15 +31,4 @@ async def test_app(test_config):
 
 @pytest_asyncio.fixture
 async def client(aiohttp_client, test_app):
-    redis = test_app["redis"]
-    redis.set_metrics(
-        "sw-1",
-        {
-            "bandwidth_in": 100,
-            "bandwidth_out": 200,
-            "latency_ms": 5,
-            "packet_errors": 0,
-            "updated_at": "2025-01-01T00:00:00",
-        },
-    )
     return await aiohttp_client(test_app)

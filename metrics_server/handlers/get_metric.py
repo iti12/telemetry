@@ -1,19 +1,24 @@
 from aiohttp import web
-from shared.base_handler import BaseHandler
-from shared.base_redis import BaseRedisStore
+
+from metrics_server.handlers.base_metrics_handler import BaseMetricsHandler
 
 
-class GetMetricHandler(BaseHandler):
-    def __init__(self, redis_store: BaseRedisStore):
-        super().__init__("get_metric")
-        self.redis = redis_store
+class GetMetricHandler(BaseMetricsHandler):
+    def __init__(self, generator_url: str):
+        super().__init__("get_metric", generator_url)
 
     async def handle(self, request: web.Request) -> web.Response:
-        switch_id = request.match_info.get("switch_id")
-        metric = request.match_info.get("metric")
+        switch_id = request.match_info["switch_id"]
+        metric = request.match_info["metric"]
 
-        metrics = await self.redis.get_metrics(switch_id)
-        if not metrics or metric not in metrics:
+        all_metrics = await self._fetch_metrics_from_generator()
+
+        if switch_id not in all_metrics:
+            raise web.HTTPNotFound(text=f"Switch '{switch_id}' not found")
+
+        switch_metrics = all_metrics[switch_id]
+
+        if metric not in switch_metrics:
             raise web.HTTPNotFound(
                 text=f"Metric '{metric}' not found for switch '{switch_id}'"
             )
@@ -22,6 +27,6 @@ class GetMetricHandler(BaseHandler):
             {
                 "switch_id": switch_id,
                 "metric": metric,
-                "value": metrics[metric],
+                "value": switch_metrics[metric],
             }
         )

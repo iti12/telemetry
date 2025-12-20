@@ -17,12 +17,18 @@ class BaseHandler(ABC):
         self.request_count += 1
         try:
             return await self.handle(request)
+        except web.HTTPException:
+            raise
         except Exception:
             logger.exception("Handler error")
             raise web.HTTPInternalServerError()
         finally:
             self.total_latency += time.perf_counter() - start
-            logger.info(f"{request.method} {self.name} metrics: avg_latency={self.avg_latency:.3f}s, requests={self.request_count}")
+            logger.info(
+                f"{request.method} {self.name} metrics: "
+                f"avg_latency={self.avg_latency:.3f}s, "
+                f"requests={self.request_count}"
+            )
 
     @abstractmethod
     async def handle(self, request: web.Request) -> web.Response:
