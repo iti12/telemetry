@@ -2,7 +2,7 @@ import asyncio
 import pytest
 from aiohttp import web
 
-from shared.base_handler import BaseHandler
+from base.base_handler import BaseHandler
 
 
 class DummyHandler(BaseHandler):

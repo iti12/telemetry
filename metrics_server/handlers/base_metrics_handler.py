@@ -3,7 +3,7 @@ import csv
 import io
 from aiohttp import web, ClientSession
 
-from shared.base_handler import BaseHandler
+from base.base_handler import BaseHandler
 
 logger = logging.getLogger(__name__)
 

@@ -2,14 +2,14 @@ import pytest
 import pytest_asyncio
 
 from telemetry_generator.server import create_app
-from shared.config import (
+from base.config import (
     AppConfig,
     GeneratorServerConfig,
     TelemetryConfig,
     LoggingConfig,
     RedisConfig,
 )
-from shared.config import MetricServerConfig
+from base.config import MetricServerConfig
 
 
 @pytest.fixture

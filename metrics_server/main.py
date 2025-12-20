@@ -2,7 +2,7 @@ import argparse
 import logging
 from aiohttp import web
 
-from shared.config import load_config
+from base.config import load_config
 from metrics_server.server import create_app
 
 

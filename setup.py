@@ -11,6 +11,7 @@ setup(
     ],
     extras_require={
         "dev": [
+            "black==22.3.0",
             "pytest>=8.0",
             "pytest-aiohttp>=1.0",
             "pytest-asyncio>=0.23",

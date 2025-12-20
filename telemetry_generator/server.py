@@ -2,9 +2,10 @@
 import asyncio
 from aiohttp import web
 from telemetry_generator.handlers.counters import CountersHandler
-from shared.base_redis import BaseRedisStore
+from base.base_redis import BaseRedisStore
 from telemetry_generator.data_generator import DataGenerator  # your class
-from shared.config import AppConfig
+from base.config import AppConfig
+
 
 def create_app(config: AppConfig) -> web.Application:
     app = web.Application()
@@ -38,6 +39,7 @@ def create_app(config: AppConfig) -> web.Application:
             await task
         except asyncio.CancelledError:
             pass
+
     app.on_startup.append(start_background_tasks)
     app.on_cleanup.append(cleanup_background_tasks)
 

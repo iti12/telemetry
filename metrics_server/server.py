@@ -1,5 +1,5 @@
 from aiohttp import web
-from shared.config import AppConfig
+from base.config import AppConfig
 from metrics_server.handlers.get_metric import GetMetricHandler
 from metrics_server.handlers.list_metrics import ListMetricsHandler
 
@@ -7,7 +7,9 @@ from metrics_server.handlers.list_metrics import ListMetricsHandler
 def create_app(config: AppConfig) -> web.Application:
     app = web.Application()
 
-    generator_url = f"http://{config.generator_server.host}:{config.generator_server.port}"
+    generator_url = (
+        f"http://{config.generator_server.host}:{config.generator_server.port}"
+    )
 
     app.router.add_get(
         "/telemetry/",

@@ -2,7 +2,7 @@ import pytest
 import pytest_asyncio
 
 from metrics_server.server import create_app
-from shared.config import (
+from base.config import (
     AppConfig,
     GeneratorServerConfig,
     MetricServerConfig,
